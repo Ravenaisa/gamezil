@@ -1,0 +1,614 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+ }
+ 
+ @font-face {
+    font-family: "Oxanium";
+    src: url(fonts/Oxanium/Oxanium-VariableFont_wght.ttf);
+ }
+ 
+ /* Reset CSS */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ }
+ 
+ .container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+ 
+ }
+ 
+ .banner {
+    /* vh é a porcentagem da ALTURA da tela */
+    /* vw é a porcentagem da LARGURA da tela */
+    height: 100vh;
+ 
+    background: rgba(0, 0, 0, 0.622);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.867) 0%, rgba(132, 132, 132, 0.4) 49%, rgba(255, 255, 255, 0.8) 100%), url(img/imagem\ header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ 
+    padding-bottom: 100px;
+ 
+ }
+ 
+ header .container-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ header button {
+    display: none;
+ }
+ 
+ .menu {
+    width: 700px;
+ 
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ 
+ .menu a {
+    font-size: 18px;
+    font-family: "Oxanium";
+ 
+    color: white;
+ 
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+ 
+    transition: text-decoration 500ms ease;
+ 
+    display: flex;
+    align-items: center;
+ 
+ }
+ 
+ .menu a:hover {
+ 
+    text-decoration-color: white;
+ }
+ 
+ span {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+ 
+ }
+ 
+ .botao-formulario {
+    font-family: "Oxanium";
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #00A562;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 14px;
+ 
+    transition: background-color 500ms ease;
+ }
+ 
+ 
+ .botao-formulario:hover {
+    background-color: #008B52;
+ 
+ }
+ 
+ 
+ #sobre {
+    height: 550px;
+    padding: 100px 25%;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    text-align: center;
+ }
+ 
+ h2 {
+    font-family: "Oxanium";
+    font-size: 28px;
+ }
+ 
+ #sobre p {
+    font-family: "Montserrat";
+    font-size: 17px;
+ 
+    text-align: center;
+ 
+    line-height: 1.5;
+ }
+ 
+ .imagem-central {
+    height: 60%;
+    width: 60%;
+    margin-left: 20%;
+    opacity: 70%;
+ 
+ 
+ }
+ 
+ #cases {
+    font-family: "Montserrat";
+    font-size: 17px;
+ 
+    text-align: center;
+ 
+    line-height: 8;
+ }
+ 
+ #cases {
+    background-image: url(img/Group\ 55.png);
+    height: 108vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+ }
+ 
+ 
+ .imagens-cases {
+    margin: 10px auto;
+    margin-top: -100px;
+    
+ }
+ 
+ .animall {
+    width: 350px;
+ }
+ 
+ #cases h2 {
+    margin-bottom: 100px;
+ }
+ 
+ 
+ 
+ #cases img {
+ 
+    z-index: 1;
+ 
+    transition: 200ms;
+ }
+ 
+ #cases img:hover {
+    transform: scale(1.10);
+    transition: 200ms;
+ 
+ }
+ 
+ #formulario {
+    font-family: "Montserrat";
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: rgb(2, 33, 21);
+    background: linear-gradient(0deg, #338363 0%, #33836380 50%, rgba(255, 255, 255, 1) 100%), url(img/imagem\ do\ footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ 
+ form {
+    background-color: white;
+    width: 30%;
+    max-width: 500px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 28px;
+    margin-top: 30px;
+ }
+ 
+ 
+ form p {
+    background-color: #0A8754;
+    border-radius: 28px;
+    width: 100%;
+    height: 90px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    font-size: 25px;
+    font-family: "Oxanium";
+    color: white;
+ 
+ }
+ 
+ .campo {
+    width: 60%;
+    text-align: left;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    margin-bottom: 30px;
+ }
+ 
+ .campo-descricao {
+    width: 60%;
+ 
+    text-align: left;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+ }
+ 
+ .campo input {
+    height: 40px;
+ 
+    background-color: #F5F5F5;
+ 
+    border: none;
+    border-radius: 17px;
+ 
+    text-indent: 10px;
+ 
+    outline: none;
+ }
+ 
+ .campo-descricao textarea {
+    color: rgb(0, 0, 0);
+    background-color: #F5F5F5;
+ 
+    border: none;
+    border-radius: 17px;
+ 
+    outline: none;
+ 
+    padding: 10px;
+ 
+    resize: none;
+ }
+ 
+ 
+ .campo label,
+ .campo-descricao label {
+    font-family: "Oxanium";
+ 
+ }
+ 
+ .campo input,
+ .campo-descricao textarea {
+    font-family: "Montserrat";
+    font-size: 15px;
+ }
+ 
+ 
+ .campo input::placeholder,
+ .campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+ }
+ 
+ .campo input:focus,
+ .campo-descricao textarea:focus {
+    outline: 2px solid #0A8754;
+ }
+ 
+ 
+ #formulario form button {
+    height: 40px;
+    width: 60%;
+    margin-top: 20px;
+ 
+    background-color: #029B5D;
+    color: white;
+ 
+    border: none;
+    border-radius: 66px;
+ 
+    font-size: 17px;
+    font-family: "Montserrat";
+    font-weight: 500;
+ 
+    text-transform: uppercase;
+ 
+    cursor: pointer;
+ 
+    transition: background-color 500ms ease;
+ }
+ 
+ #formulario form button:hover {
+    background-color: #007847;
+ }
+ 
+ footer {
+    background-color: #0A8754;
+    width: 100%;
+ }
+ 
+ footer .container-grid {
+    height: 212px;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ 
+ 
+ .icones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+ }
+ 
+ 
+ .icone-telefone,
+ .icone-email,
+ .icone-instagram,
+ .icone-facebook,
+ .icone-linkedin {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+ }
+ 
+ .icones a {
+    color: #ebebeb;
+    margin-right: 5px;
+    font-family: "Outfit";
+    font-size: 20px;
+    text-decoration: none;
+    transition: 500ms;
+ }
+ 
+ .icones a:hover {
+    color: #13293D;
+    transition: 500ms;
+ }
+ 
+ .icone-facebook {
+    margin-right: 0;
+ }
+ 
+ .menu-fechado {
+    display: none;
+ }
+ 
+ #icone-barras {
+    display: none;
+ }
+ 
+ @media only screen and (max-width: 1300px) {
+    header {
+       position: relative;
+    }
+ 
+    header button {
+       width: 50px;
+ 
+       display: unset;
+       background: none;
+       border: none;
+    }
+ 
+    .bars {
+       fill: white;
+    }
+ 
+    nav.menu {
+       height: 300px;
+       width: 200px;
+       padding: 30px;
+       flex-direction: column;
+       justify-content: space-around;
+       background-color: #000000b5;
+       position: absolute;
+       top: 80px;
+       right: -10px;
+       bottom: 0;
+    }
+ 
+    span {
+       display: none;
+    }
+ }
+ 
+ @media only screen and (max-width: 1080px) {
+ 
+ 
+    h2 {
+       font-size: 25px;
+    }
+ 
+    .animall {
+       width: 250px;
+    }
+ 
+    .ecosoy {
+       width: 180px;
+       height: 274px;
+    }
+ 
+    .good-helthy {
+       width: 180px;
+    }
+ 
+    #sobre p {
+       font-size: 14px;
+    }
+ 
+    .icones a {
+       font-size: 13px;
+    }
+ 
+    form {
+       width: 50%;
+    }
+ }
+ 
+ @media screen and (max-width: 700px) {
+ 
+    .imagens-cases {
+       margin-top: -50px;
+    }
+ 
+    .animall {
+       width: 180px;
+    }
+ 
+    .ecosoy {
+       width: 120px;
+       height: 182px;
+    }
+ 
+    .good-helthy {
+       width: 120px;
+    }
+ 
+    #sobre p {
+       font-size: 12px;
+    }
+ 
+    form {
+       width: 60%;
+    }
+ 
+    #formulario {
+       margin-top: -280px;
+    }
+ 
+    form p {
+       font-size: 20px;
+    }
+ 
+    .icones a {
+       font-size: 10px;
+    }
+ 
+    #cases {
+       margin-bottom: 100px;
+    }
+ 
+    .icones {
+       width: 50px;
+       flex-wrap: wrap;
+    }
+ 
+    .icones-redes {
+       display: none;
+    }
+ 
+    .icones a {
+       font-size: 12px;
+    }
+ 
+    .icone-telefone a {
+       width: 40px;
+    }
+ }
+ 
+ @media screen and (max-width: 520px) {
+    header img {
+       width: 200px;
+    }
+ 
+    nav.menu {
+       height: 250px;
+       width: 150px;
+    }
+ 
+    #sobre p {
+       font-size: 10px;
+    }
+ 
+    h2 {
+       font-size: 20px;
+    }
+ 
+    .imagens-cases {
+       margin-top: 20px;
+    }
+ 
+    .animall {
+       width: 130px;
+    }
+ 
+    .ecosoy {
+       width: 80px;
+       height: 122px;
+    }
+ 
+    .good-helthy {
+       width: 80px;
+    }
+ 
+    #cases {
+       margin-bottom: 100px;
+    }
+ 
+ 
+    form {
+       width: 70%;
+    }
+ 
+    .campo-descricao textarea {
+       font-size: 12px;
+    }
+ }
+ 
+ @media screen and (max-width: 400px) {
+    header img {
+       width: 150px;
+    }
+ 
+    header button {
+       width: 40px;
+    }
+ 
+    nav.menu {
+       display: none;
+    }
+ 
+    #sobre p {
+       font-size: 8px;
+    }
+ 
+    .imagens-cases {
+       margin-top: 50px;
+    }
+ 
+    .animall {
+       width: 100px;
+    }
+ 
+    .ecosoy {
+       width: 70px;
+       height: 107px;
+    }
+ 
+    .good-helthy {
+       width: 70px;
+    }
+ 
+    form {
+       width: 90%;
+    }
+ }
